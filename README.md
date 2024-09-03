@@ -1,6 +1,6 @@
 # Portfolio HTML tehtävä
 
-HTML Assignments
+/*HTML Assignments
 1. Basic Personal Webpage
 
 Description: Create a simple personal webpage that includes your name, a brief biography, and a list of your hobbies. Use heading, paragraph, and list elements.
@@ -30,4 +30,4 @@ Utilize various form elements like <input>, <textarea>, and <select>.
 Description: Develop a multipage website on a subject of your choice. Include a home page, a contact form, an image gallery, and a news section. Link each page using a consistent navigation bar.
 Objectives:
 Combine previously learned HTML concepts.
-Understand website architecture and navigation.
+Understand website architecture and navigation.*/
