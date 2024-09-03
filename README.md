@@ -1,1 +1,1 @@
-# Web-sovellustenPerusteet-S2024
+# Luentoharjoitus1
