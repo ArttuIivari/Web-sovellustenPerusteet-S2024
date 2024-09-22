@@ -1,0 +1,22 @@
+@keyframes hienovarimuunnosxD{
+    from{background-color: red;}
+    to {background-color: white;}
+}
+
+h1{
+    font-family: 'old english text MT';
+    font-size: 40px;
+    background-color: beige;
+    text-align: center;
+    padding-bottom: 20px;
+}
+a:hover{
+    font-family: 'old english text MT';
+    background-color: white;
+    animation-name: hienovarimuunnosxD;
+    animation-duration: 4s;
+}
+a.Home{
+    font-size: 30px;
+}
+
