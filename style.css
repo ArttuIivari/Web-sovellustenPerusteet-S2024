@@ -1,0 +1,49 @@
+@media only screen and (max-width: 600px){
+    body {
+        background-color: blue;
+        
+    }
+    .image{
+        width: 50%;
+    }
+}
+
+.clickableElement{
+    background-color: gray;
+    height: 50px;
+    width: 60px;
+    font-size: 10px;
+    text-align:center;
+    cursor:default;
+}
+.clickableElement:active{
+    transform: scale(0.9);
+
+}
+.image:hover{
+    border-style: solid;
+}
+p.report{
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-weight: bold;
+}
+p.nav{
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    
+}
+/* Grid containers */
+.grid-container{
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+}
+.grid-item{
+    padding: 10px;
+    text-align: center;
+}
+.item7{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
