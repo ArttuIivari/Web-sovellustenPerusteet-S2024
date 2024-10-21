@@ -1,0 +1,300 @@
+@keyframes fadeIn {
+    0% { opacity: 0;}
+    100% { opacity: 1;}
+}
+@keyframes headerAnimation{
+    
+    0% { background-image: url("../assets/images/image.png");}
+    33% { background-image: url("../assets/images/shrek.gif");}
+    66% { background-image: url("../assets/images/ajax.png");}
+    100% { background-image: url("../assets/images/image.png");}
+    to {
+        
+    }
+}
+body{
+    background-color: #042940;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+:root{
+    --image: url("../assets/images/image.png");
+}
+/* ----------------------------BUTTONS ---------------------------- */
+.button{
+    user-select: none;
+    border: solid;
+}
+.tinyButton{
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+}
+.smallButton{
+    height: 100px;
+    width: 100px;
+    overflow: hidden;
+}
+.mediumButton{
+    height: 150px;
+    width: 150px;
+    overflow: hidden;
+}
+.largeButton{
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+}
+.hugeButton{
+    height: 400px;
+    width: 400px;
+    overflow: hidden;
+}
+.tinyButton .images{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.smallButton .images{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.mediumButton .images{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.largeButton .images{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.hugeButton .images{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.submitButton{
+    background-color: rgb(16, 20, 32);
+    color: white;
+    border: none;
+    width: 60px;
+    font-size: 13px;
+    text-align:center;
+    cursor:default;
+    user-select: none;
+    
+    
+}
+.button:active{
+    transform: scale(0.9);
+}
+.upgradeButtons:hover .upgradeDesc{
+    animation: fadeIn 1s;
+    visibility: visible;
+}
+.upgradeButtons .upgradeDesc{
+    visibility: hidden;
+    width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  
+}
+@keyframes scale{
+    to {
+        transform: scale(0.5);
+    }
+}
+.grid-header{                        
+    user-select: none;              
+    background-size: 25vh 15vh;
+    animation: headerAnimation 15s infinite;   
+} 
+.headerDiv-flex{
+    display: flex;
+}
+.headerDiv-flex .headerbox1{
+    animation: headerAnimation 15s infinite;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grid-layout{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 15vh 15vh 15vh 15vh 15vh 15vh;
+    
+
+}
+
+.grid-header{
+    user-select: none;
+    grid-column-start: 1;
+    grid-column-end: span 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: #9FC131;
+    border: solid;
+    position: relative;
+    /* background-image: var(--image); */
+    
+    overflow: hidden;
+    
+}
+.grid-header p{
+    margin: 0;
+    position: absolute;
+    
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
+}
+.grid-menu{
+    
+    background-color: #005C53;
+    grid-column-start: 1;
+    grid-column-end: 2;  
+    grid-row-start: 2;
+    grid-row-end: 4;
+    border: solid;
+    padding: 50px;
+    padding-bottom: 100px;
+    
+}
+.grid-clickerArea{
+    display: flex;
+    
+    background-color: #005c53b4;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 7;
+    border: solid;
+    padding: 50px;
+    justify-content: center;
+    
+}
+.grid-buildingScreen{
+    background-color: #005C53;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 7;
+    border: solid;
+    padding: 50px;
+}
+.grid-upgradesScreen{
+    background-color: #005C53;
+    grid-column-start: 1;
+    grid-column-end: 2;  
+    grid-row-start: 4;
+    grid-row-end: 7;
+    border: solid;
+    padding: 50px;
+}
+
+.nav{
+    background-color: #DBF227;
+    overflow: hidden;
+    border: solid;
+}
+.nav a{
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.nav a:hover{
+    background-color:#9FC131;
+}
+.footer{
+    background-color: #d6d58e;
+    overflow: hidden;
+    border: solid;
+}
+.footer a{
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.footer a:hover{
+    background-color:#9FC131;
+}
+@media only screen and (max-width: 1150px){
+    
+    .grid-layout{
+        
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 15vh 15vh 15vh 15vh 15vh 15vh 15vh 15vh 15vh 15vh 15vh 15vh 15vh 15vh;
+        justify-content: center;
+        
+    }
+    .grid-header{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2; 
+    }
+    .grid-menu{
+        grid-column-start: 1;
+        grid-column-end: 2;  
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+    .grid-clickerArea{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 8;
+    }
+    .grid-buildingScreen{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 8;
+        grid-row-end: 12;
+    }
+    .grid-upgradesScreen{
+        grid-column-start: 1;
+        grid-column-end: 2;  
+        grid-row-start: 12;
+        grid-row-end: 15;
+    }
+    .tinyButton{
+        
+        overflow: hidden;
+        
+    }
+    .smallButton{
+        height: 5em;
+        width: 5em;
+        overflow: hidden;
+    }
+    .mediumButton{
+        height: 75px;
+        width: 75px;
+        overflow: hidden;
+    }
+    .largeButton{
+        height: 100px;
+        width: 100px;
+        overflow: hidden;
+    }
+    .hugeButton{
+        height: 250px;
+        width: 250px;
+        overflow: hidden;
+    }
+}

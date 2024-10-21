@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIF Clicker</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="clicker.html">Clicker</a>
+
+        </div>
+    </nav>
+    <div class="grid-layout">
+        
+        <div class="grid-header">
+            <div class="headerDiv-flex">
+                <div class="headerbox1">
+                    
+                </div>
+                <div class="headerbox2">
+        
+                </div>
+                <div class="headerbox3">
+
+                </div>
+            </div>
+            <p style="font-size:30px;">GIF CLICKER</p>
+        
+        
+        
+        </div>
+        <div class="grid-menu">
+            <div style="text-align:center;">
+                <h1>Menu</h1>
+            </div>
+            <div>
+                <form id="gifForm" style="text-align:center;">
+                    <label>Select theme by making a search</label>
+                    <input type="text" id="GIFsearch" required>
+                    <input type="submit" value="Submit" class="button submitButton">
+                </form>
+                <p style="font-size:15px;">Tip: you can search as many times as you like</p>
+            </div>
+            <div>
+                
+            </div>
+        </div>
+        <div class="grid-clickerArea">
+            <div class="clicker-data">               <!--  floatin käyttö -->
+                <p style="font-size: 20px;" id="cash">Cash: </p>
+                <div class="button hugeButton" id="clickerButton">
+        
+                    <img src="assets/images/image.png" class="images" id="clickerImage">
+                </div>
+                
+            </div>
+        </div>
+        <div class="grid-buildingScreen">
+            <div style="text-align:center;"><h1>Building Screen</h1></div>
+            <table>
+                <tr>
+                    <td>
+                        <div class="button smallButton" id="buildingButton0">
+                
+                            <img src="assets/images/image.png" class="images" id="buildingImage0">
+                        </div>
+                        
+                    </td>
+                    <td>
+                        <div> <p>First building</p>
+                            <p id="buildingCost0">50.0</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    <div class="button smallButton" id="buildingButton1">
+                        
+                        <img src="assets/images/image.png" class="images" id="buildingImage1">
+                    </div>
+                    </td>
+                    <td>
+                        <div> <p>Second building</p>
+                            <p id="buildingCost1">1000.0</p></div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="grid-upgradesScreen">
+            <div style="text-align: center;"><h1>Upgrades</h1></div>
+            <table>
+                <tr>
+                    <td id="upgrade0">
+                        <div class="button tinyButton upgradeButtons">
+                            <img src="assets/images/image.png" class="images" id="upgradeImage0">
+                            <span class="upgradeDesc"id="upgradeDesc0"><i>Cost: 250</i><br>Improve First building's production by 50%</span>
+                        </div>
+                    </td>
+                    <td id="upgrade1">
+                        <div class="button tinyButton upgradeButtons">
+                
+                            <img src="assets/images/image.png" class="images" id="upgradeImage1">
+                            <span class="upgradeDesc" id="upgradeDesc1"><i>Cost: 750</i><br>Increase click power to 2</span>
+                        </div>
+                    </td>
+                    <td id="upgrade1">
+                        <div class="button tinyButton upgradeButtons">
+                
+                            <img src="assets/images/image.png" class="images" id="upgradeImage1">
+                            <span class="upgradeDesc" id="upgradeDesc2">Increase click power to 2</span>
+                        </div>
+                    </td>
+                    <td id="upgrade1">
+                        <div class="button tinyButton upgradeButtons">
+                
+                            <img src="assets/images/image.png" class="images" id="upgradeImage1">
+                            <span class="upgradeDesc" id="upgradeDesc1">Increase click power to 2</span>
+                        </div>
+                    </td>
+                    <td id="upgrade1">
+                        <div class="button tinyButton upgradeButtons">
+                
+                            <img src="assets/images/image.png" class="images" id="upgradeImage1">
+                            <span class="upgradeDesc" id="upgradeDesc1">Increase click power to 2</span>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+
+        </div>
+    </div>
+
+   
+
+
+
+
+
+<footer>
+    <div class="footer">
+        <p>This is very cool</p>
+
+
+    </div>
+</footer>
+
+<script src="assets/script.js"></script>
+</body>
+
+</html>
